@@ -291,7 +291,7 @@ function renderBrandLogo(color: string) {
       resolve(canvas.toDataURL("image/png"))
     }
     image.onerror = () => reject(new Error("No se ha podido cargar el logotipo de GAMO."))
-    image.src = "/gamo-logo-official.png"
+    image.src = `${import.meta.env.BASE_URL}gamo-logo-official.png`
   })
 }
 

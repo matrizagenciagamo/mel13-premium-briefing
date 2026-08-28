@@ -4,42 +4,42 @@
 
 @font-face {
   font-family: "T1 Korium";
-  src: url("/fonts/t1-korium.woff2") format("woff2");
+  src: url("../fonts/t1-korium.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "IBM Plex Sans";
-  src: url("/fonts/ibm-plex-sans-latin.woff2") format("woff2");
+  src: url("../fonts/ibm-plex-sans-latin.woff2") format("woff2");
   font-style: normal;
   font-weight: 400 700;
   font-display: swap;
 }
 @font-face {
   font-family: "IBM Plex Mono";
-  src: url("/fonts/ibm-plex-mono-400-latin.woff2") format("woff2");
+  src: url("../fonts/ibm-plex-mono-400-latin.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "IBM Plex Mono";
-  src: url("/fonts/ibm-plex-mono-500-latin.woff2") format("woff2");
+  src: url("../fonts/ibm-plex-mono-500-latin.woff2") format("woff2");
   font-style: normal;
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "IBM Plex Mono";
-  src: url("/fonts/ibm-plex-mono-600-latin.woff2") format("woff2");
+  src: url("../fonts/ibm-plex-mono-600-latin.woff2") format("woff2");
   font-style: normal;
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: "IBM Plex Mono";
-  src: url("/fonts/ibm-plex-mono-700-latin.woff2") format("woff2");
+  src: url("../fonts/ibm-plex-mono-700-latin.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -143,8 +143,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   aspect-ratio: 1000 / 321;
   color: var(--violet);
   background: currentColor;
-  -webkit-mask: url("/gamo-logo-official.png") center / contain no-repeat;
-  mask: url("/gamo-logo-official.png") center / contain no-repeat;
+  -webkit-mask: url("../gamo-logo-official.png") center / contain no-repeat;
+  mask: url("../gamo-logo-official.png") center / contain no-repeat;
 }
 .brand-lockup-violet { color: var(--violet); }
 .brand-lockup-green { color: var(--green); }
