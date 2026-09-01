@@ -34,6 +34,9 @@ import { Textarea } from "@/components/ui/textarea"
 type Values = Record<string, string>
 type SendStatus = "idle" | "sending" | "success" | "error"
 
+const FORM_ENDPOINT = "https://formsubmit.co/ajax/a34184a720fba149609482f5d5b462a7"
+const FORM_URL = "https://briefing-mel13.agenciagamo.es/"
+
 const sections = [
   { id: "proyecto", number: "01", eyebrow: "Punto de partida", title: "Proyecto y responsables" },
   { id: "producto", number: "02", eyebrow: "Verdad de producto", title: "Ciencia, fórmula y beneficio" },
@@ -762,11 +765,13 @@ export default function Home() {
       formData.append("Briefing PDF", new File([pdf], pdfFilename(), { type: "application/pdf" }))
       formData.append("_subject", `${isTestMode ? "[PRUEBA] " : ""}MEL13 Premium · Briefing completado · ${values.contact_name}`)
       formData.append("_cc", values.copy_email)
+      formData.append("_replyto", values.contact_email)
+      formData.append("_url", FORM_URL)
       formData.append("_template", "table")
       formData.append("_captcha", "false")
       formData.append("_honey", "")
 
-      const response = await fetch("https://formsubmit.co/ajax/info@agenciagamo.es", {
+      const response = await fetch(FORM_ENDPOINT, {
         method: "POST",
         body: formData,
         headers: { Accept: "application/json" },
